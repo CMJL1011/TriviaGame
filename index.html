@@ -1,61 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Aviation Quiz </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/javascript/app.js"></script>
+<title>US Aviation Trivia</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="container">
-  <h1 class="text-center">The US Aviation History Quiz</h1>
-
-  <p>This airplane is commonly called the "jumbo jet"</p>
-  <form id="aquiz1" name="avquiz">
-    <label class="radio-inline">
-      <input id="rad" type="radio" name="q1">Option 1
-    </label>
-    <label class="radio-inline">
-      <input id="rad" type="radio" name="q1">Option 2
-    </label>
-    <label class="radio-inline">
-      <input id="rad"type="radio" name="q1">Option 3
-    </label>
-  </form>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">US Aviation Trivia</h1>
+    </div>
+  </div>
 </div>
-<div class="container">
-  <p>This airplane is commonly called the "jumbo jet"</p>
-  <form id="aquiz2" name="avquiz">
-    <label class="radio-inline">
-      <input id="rad" type="radio" name="q2">Option 1
-    </label>
-    <label class="radio-inline">
-      <input id="rad" type="radio" name="q2">Option 2
-    </label>
-    <label class="radio-inline">
-      <input id="rad"type="radio" name="q2">Option 3
-    </label>
-  </form>
-</div>
-	 
-<div class="container">	
-	<p>This airplane is commonly called the "jumbo jet"</p>
-  <form id="aquiz2" name="avquiz">
-    <label class="radio-inline">
-      <input id="rad" type="radio" name="q2">Option 1
-    </label>
-    <label class="radio-inline">
-      <input id="rad" type="radio" name="q2">Option 2
-    </label>
-    <label class="radio-inline">
-      <input id="rad"type="radio" name="q2">Option 3
-    </label>
-  </form>
-</div>
-	<input class="btn btn-default" type="submit" value="Submit" onClick="">
+<form "text-center" id = "avTriv" name = "avTriv">
+  <p class = "Q1">This Airplane is commonly known as a "jumbo jet"</p>
+  <input type = "radio" id = "AC" name = "Q1" value = "Airbus 380">
+  Airbus 380<br>
+  <input type = "radio" id = "AC" name = "Q1" value = "Lockheed L1011">
+  Lockheed L1011<br>
+  <input type = "radio" id = "AC" name = "Q1" value = "Boeing 747">
+  Boeing 747<br>
+  <p class = "Q2">When did the Wright Brothers make their first flight?"</p>
+  <input type = "radio" id = "AC" name = "Q2" value = "1906">
+  1906<br>
+  <input type = "radio" id = "AC" name = "Q2" value = "1903">
+  1903<br>
+  <input type = "radio" id = "AC" name = "Q2" value = "1918">
+  1918<br>
+  <p class = "Q3">Which air vehicle first landed a man on the moon?"</p>
+  <input type = "radio" id = "AC" name = "Q3" value = "Luna 2">
+  Luna 2<br>
+  <input type = "radio" id = "AC" name = "Q3" value = "Apollo 13">
+  Apollo 13<br>
+  <input type = "radio" id = "AC" name = "Q3" value = "Apollo 11">
+  Apollo 11<br>
+  <input id = "button" type = "button" value = "Submit" onclick = "accSub();">
+</form>
+<div id = "show">
+  <p id = "ans"></p>
+  <p id = "msg"></p>
+  <img id = "img"></div>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+<!-- jQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </body>
 </html>
